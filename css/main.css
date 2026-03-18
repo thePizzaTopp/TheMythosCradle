@@ -1,0 +1,270 @@
+
+.navbar {
+    display: flex;
+    background-color: #FFFFFF;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    opacity: 0.7;
+    
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+h2{
+    color: #e9ad1c;
+    font-size: 18pt;
+}
+
+h1{
+    font-size: 40pt;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 18pt;
+    font-weight: 'semi-bold';
+}
+p{
+    font-size: 16pt;
+    
+}
+
+
+
+@font-face {
+    font-family: "Myth";
+    src: url("../assets/fonts/mythology_of_egypt/Mythology\ Of\ Egypt.otf");
+
+}
+
+
+
+.logoContainer {
+    text-align: center;
+}
+
+.logoContainer img {
+    width: 200px;    
+    height: auto;
+}
+.links{
+    font-family: 'Poppins', sans-serif;
+    width : 200px;
+    display: flex;
+    justify-content: space-evenly;
+
+    
+}
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+a:hover{
+    color : #15D5F5;
+}
+
+.hero-container {
+    max-width: 100%;
+    width: 100%;
+    min-height: calc(100vh - 160vh);  
+    height: auto;                     
+    background-image: url('../assets/img/homeHeader.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+    
+}
+
+
+
+.headerText h1,
+.headerText p {
+    margin: 0;
+}
+.headerText h1{
+    font-family: 'Myth', sans-serif;
+    
+    color: #e9ad1c;
+    font-size: 96px;
+    font-weight: lighter;
+    
+}
+.headerText p{
+    
+    font-family: 'Metamorphous', sans-serif;
+    color: white;
+    font-size: 24px;
+    
+}
+.headerText {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+    align-items: start;
+    justify-content: flex-end;
+    margin-left: 60%;
+    margin-top: 28%;
+    margin-bottom: 10%;
+    
+}
+
+
+.journey {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    gap: 40px;
+    padding: 40px;
+    padding-left: 60px;
+    margin-top: 1px;
+    color: white;
+    background-color: #002d68 ;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.journeyText , .theCradleText{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+.journeyText p , .theCradleText p{
+    font-family: 'Poppins' , sans-serif;
+}
+.journeyImgSlider {
+    
+    width: 50%;
+    height: auto;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Create{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18pt;
+    font-weight: 'semi-bold';
+    background-color: #15D5F5;
+    width: 250px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+
+.theCradle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+    padding: 40px;
+    padding-left: 60px;
+    margin-top: 1px;
+    color: rgb(122, 122, 122);
+    background-color: #ffffff ;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.theCradleText h2{
+    color: #15D5F5;
+}
+.theCradleText h1{
+    color: #002d68;
+}
+.theCradle img{
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.theCradleText{
+    
+    padding: 120px;
+}
+
+.pastFriends {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    padding-left: 60px;
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+    background-color: #002d68 ;
+    width: 100%;
+    box-sizing: border-box;
+}
+.pastHeading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    padding-left: 60px;
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cards p{
+    font-size: 12pt;
+}
+
+.pastCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+}
+.pastCard img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
