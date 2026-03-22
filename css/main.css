@@ -37,6 +37,12 @@ h3{
     font-size: 18pt;
     font-weight: 'semi-bold';
 }
+h4{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 16pt;
+    font-weight: bold;
+}
 p{
     font-size: 16pt;
     
@@ -268,3 +274,81 @@ a:hover{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 20px;
+}
+
+.footerTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.footerBottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top : 50px;
+    
+}
+
+.terms{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.footerLogo img{
+    width: 300px;    
+    height: auto;
+}
+.footerLogo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footerPages{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.footPages{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerMedia{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.footerMedia img{
+    width: 80px;
+    height: auto;
+}
+.footMedia{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.copyright p, .terms p{
+    color: rgb(122, 122, 122);
+    font-size: 12pt;
+}
+
+.footerLogo p , .footPages a{
+    color: rgb(122, 122, 122);
+    font-size: 15pt;
+}
+
+
