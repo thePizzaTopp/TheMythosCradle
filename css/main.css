@@ -352,3 +352,68 @@ a:hover{
 }
 
 
+/* adopt page */
+
+.adoptHeaderBack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;  
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.hero-containerAdopt {
+    max-width: 100%;
+    width: auto;
+    min-height: calc(100vh - 160vh);  
+    height: 100%;                     
+    
+    padding: 1px;
+    
+}
+
+.adoptHeaderText h1{
+    font-family: 'Myth', sans-serif;
+    
+    color: #ffffff;
+    font-size: 96px;
+    font-weight: lighter;
+    padding: 50px;
+    
+}
+.adoptHeaderText {
+    display: flex;
+    justify-content: center;
+}
+
+.begin{
+    
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #002d68;
+    padding: 60px;
+    padding-left: 100px;
+
+}
+
+.begin h2{
+    font-size: 24pt;
+    font-family: 'Metamorphous', sans-serif;
+    align-self: center;
+}
+.begin p{
+    display: flex;
+    font-size: 12pt;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 255, 255);
+    align-self: center;
+    text-align: center;
+    
+}
+
