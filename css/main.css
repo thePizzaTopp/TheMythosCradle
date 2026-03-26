@@ -636,3 +636,59 @@ a:hover{
     font-size: 14pt;
     color: gray;
 }
+
+.socialSection{
+display: flex;
+flex-direction: row;
+
+}
+
+.socialLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    
+}
+
+.socialLeft h2{
+    font-size: 16pt;
+    color: #15D5F5;
+}
+
+.socialLeft h3{
+    font-size: 24pt;
+    color: #002d68;
+}
+
+.socialMediaIcons img{
+    width: 80px;
+}
+
+.socialMediaIcons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.socialMediaPages{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.socialMediaPages h2, h3, .socialMediaIcons{
+    margin: 0;
+}
+
+.physicalLocation {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 15px;
+    
+}
+
+.physicalLocation h2 , h3 , iframe{
+    margin: 0;
+}
