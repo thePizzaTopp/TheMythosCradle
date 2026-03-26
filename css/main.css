@@ -4,7 +4,7 @@
     background-color: #FFFFFF;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    juntestify-cont: space-between;
     margin: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -490,6 +490,7 @@ a:hover{
 }
 
 .creatureButtons{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -560,6 +561,7 @@ a:hover{
 
 .creatureCardColour h3 , p2 , .creatureSeperationW {
     color: white;
+    margin-bottom: 20px;
     
 }
 
