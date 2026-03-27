@@ -4,7 +4,7 @@
     background-color: #FFFFFF;
     flex-direction: row;
     align-items: center;
-    juntestify-cont: space-between;
+    justify-content: space-between;
     margin: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -377,12 +377,17 @@ a:hover{
 }
 
 .hero-containerAdopt {
-    max-width: 100%;
-    width: auto;
-    min-height: calc(100vh - 160vh);  
-    height: 100%;                     
     
+    max-width: 100%;
+    width: 100%;
+    min-height: calc(100vh - 160vh);  
+    height: auto;                     
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 1px;
+    
     
 }
 
