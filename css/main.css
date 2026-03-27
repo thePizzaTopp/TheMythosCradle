@@ -640,6 +640,8 @@ a:hover{
 .socialSection{
 display: flex;
 flex-direction: row;
+justify-content: space-between;
+padding: 40px;
 
 }
 
@@ -691,4 +693,63 @@ flex-direction: row;
 
 .physicalLocation h2 , h3 , iframe{
     margin: 0;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 15px;
+    width: 39%;
+    padding: 50px;
+    border-radius: 30px;
+    background-image: url("../assets/img/formBackground.png");
+}
+
+.contactForm h3{
+    color: #FFFFFF;
+}
+
+.formElement{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.formElement input,
+.formElement textarea,
+.formElement select,
+.formElement option{
+    border: none;
+    outline: none;
+    appearance: none;
+    color: gray;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+
+.formElement input,
+.formElement select,
+.formElement option{
+height: 60px;
+}
+
+.formElement label{
+    padding-bottom: 10px;
+}
+
+.formElement submit{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18pt;
+    font-weight: 'semi-bold';
+    background-color: #15D5F5;
+    width: 250px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
