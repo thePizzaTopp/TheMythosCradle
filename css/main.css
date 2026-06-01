@@ -761,4 +761,58 @@ height: 60px;
     height: 60px;
 }
 
+.addToCart{
+    display: flex;
+    position: sticky;
+    justify-content: right;
+    padding-bottom: 30px;
+    bottom: 20px;
+    right: 20px;
+   
+}
 
+.addToCart Button{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18pt;
+    font-weight: 'semi-bold';
+    background-color: #e9ad1c;
+    width: 250px;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    height: 60px;
+}
+
+
+
+.addToCart{
+    display: flex;
+    
+    justify-content: right;
+    padding-bottom: 30px;
+    bottom: 20px;
+    right: 20px;
+
+}
+
+.modal-backdrop {
+    background-color: transparent !important; opacity: 0 !important;}
+
+
+  
+.modal-backdrop {
+    --bs-backdrop-zindex: 1050;
+    --bs-backdrop-bg: #000;
+    --bs-backdrop-opacity: 0.5;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    z-index: var(--bs-backdrop-zindex);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bs-backdrop-bg);
+}
