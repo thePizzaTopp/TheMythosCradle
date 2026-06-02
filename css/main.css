@@ -816,3 +816,38 @@ height: 60px;
     height: 100vh;
     background-color: var(--bs-backdrop-bg);
 }
+
+.cart-card {
+    display: flex;
+    flex-direction: row;
+}
+.cart-card-left{
+    display: flex;
+    justify-content: center;
+}
+.cart-image-container img{
+    width: 150px;
+    height: auto;
+    /* do some more things for the image here later */
+}
+.cart-card-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+.cart-card-right h1{
+    font-size: 16pt;
+    color: #002d68;
+    border-radius: 30px;
+}
+.cart-creature-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.spinnerC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
