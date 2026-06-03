@@ -1,0 +1,268 @@
+//creating a very simple shopping cart system using javascript. The code is a bit repetitive but it works and is easy to understand. :D
+
+let price1 = document.querySelector(".price1").innerText;
+let price2 = document.querySelector(".price2").innerText;
+let price3 = document.querySelector(".price3").innerText;
+let price4 = document.querySelector(".price4").innerText;
+let price5 = document.querySelector(".price5").innerText;
+let price6 = document.querySelector(".price6").innerText;
+let total1 = document.querySelector(".total1");
+let total2 = document.querySelector(".total2");
+let total3 = document.querySelector(".total3");
+let total4 = document.querySelector(".total4");
+let total5 = document.querySelector(".total5");
+let total6 = document.querySelector(".total6");
+let qty1 = document.querySelector(".value1").innerText;
+let qty2 = document.querySelector(".value2").innerText;
+let qty3 = document.querySelector(".value3").innerText;
+let qty4 = document.querySelector(".value4").innerText;
+let qty5 = document.querySelector(".value5").innerText;
+let qty6 = document.querySelector(".value6").innerText;
+
+
+
+function countMinus1()
+{
+    let count = parseInt(document.querySelector(".value1").innerText);
+    if(count > 0){count--;}
+    document.querySelectorAll(".value1").forEach(element => element.innerText = count);
+    total1.innerText = "Total: R" + (price1.substring(7) * count) + ".00"; //this updates the total price for the item in the cart based on the quantity
+    //alert(price1 );
+    //alert(price1.replace(/\D/g, ""));  //The \D is to remove non-numeric characters, and the g is to apply it globally / every charcater in the String  //using info from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+                                                                 //and this example of  var carPriceNumber = Number(priceString.replace(/\D/g, ""));
+    let numericPrice1 = price1.replace(/\D/g, ""); //removing the non-numeric characters from the price string to get the number value for calculations
+    numericPrice1 = numericPrice1.substring(0, numericPrice1.length - 2); //removing the last two characters (the .00) from the price string to get the number value for calculations
+    total1.innerText = "Total: R" + (numericPrice1 * count) + ".00";
+    refreshModal();
+
+}
+function countPlus1()
+{
+    let count = parseInt(document.querySelector(".value1").innerText);
+    count++;
+    document.querySelectorAll(".value1").forEach(element => element.innerText = count); 
+    let numericPrice1 = price1.replace(/\D/g, ""); 
+    numericPrice1 = numericPrice1.substring(0, numericPrice1.length - 2); 
+    total1.innerText = "Total: R" + (numericPrice1 * count) + ".00"; 
+    refreshModal();
+
+}
+
+function countMinus2()
+{
+    let count = parseInt(document.querySelector(".value2").innerText);
+    if(count > 0){count--;}
+    document.querySelectorAll(".value2").forEach(element => element.innerText = count);
+        let numericPrice2 = price2.replace(/\D/g, ""); 
+    numericPrice2 = numericPrice2.substring(0, numericPrice2.length - 2); 
+    total2.innerText = "Total: R" + (numericPrice2 * count) + ".00"; 
+    refreshModal();
+}
+function countPlus2()
+{
+    let count = parseInt(document.querySelector(".value2").innerText);
+    count++;
+    document.querySelectorAll(".value2").forEach(element => element.innerText = count);
+        let numericPrice2 = price2.replace(/\D/g, ""); 
+    numericPrice2 = numericPrice2.substring(0, numericPrice2.length - 2); 
+    total2.innerText = "Total: R" + (numericPrice2 * count) + ".00";
+    refreshModal();
+}
+
+function countMinus3()
+{
+    let count = parseInt(document.querySelector(".value3").innerText);
+    if(count > 0){count--;}
+    document.querySelectorAll(".value3").forEach(element => element.innerText = count);
+        let numericPrice3 = price3.replace(/\D/g, "");
+    numericPrice3 = numericPrice3.substring(0, numericPrice3.length - 2);
+    total3.innerText = "Total: R" + (numericPrice3 * count) + ".00";
+    refreshModal();
+}
+function countPlus3()
+{
+    let count = parseInt(document.querySelector(".value3").innerText);
+    count++;
+    document.querySelectorAll(".value3").forEach(element => element.innerText = count);
+        let numericPrice3 = price3.replace(/\D/g, "");
+    numericPrice3 = numericPrice3.substring(0, numericPrice3.length - 2);
+    total3.innerText = "Total: R" + (numericPrice3 * count) + ".00";
+    refreshModal();
+}
+
+function countMinus4()
+{
+    let count = parseInt(document.querySelector(".value4").innerText);
+    if(count > 0){count--;}
+    document.querySelectorAll(".value4").forEach(element => element.innerText = count);
+        let numericPrice4 = price4.replace(/\D/g, "");
+    numericPrice4 = numericPrice4.substring(0, numericPrice4.length - 2);
+    total4.innerText = "Total: R" + (numericPrice4 * count) + ".00";
+    refreshModal();
+}
+function countPlus4()
+{
+    let count = parseInt(document.querySelector(".value4").innerText);
+    count++;
+    document.querySelectorAll(".value4").forEach(element => element.innerText = count);
+        let numericPrice4 = price4.replace(/\D/g, "");
+    numericPrice4 = numericPrice4.substring(0, numericPrice4.length - 2);
+    total4.innerText = "Total: R" + (numericPrice4 * count) + ".00";
+    refreshModal();
+}
+
+function countMinus5()
+{
+    let count = parseInt(document.querySelector(".value5").innerText);
+    if(count > 0){count--;}
+    document.querySelectorAll(".value5").forEach(element => element.innerText = count); 
+    let numericPrice5 = price5.replace(/\D/g, "");
+    numericPrice5 = numericPrice5.substring(0, numericPrice5.length - 2);
+    total5.innerText = "Total: R" + (numericPrice5 * count) + ".00";
+    refreshModal();
+}
+function countPlus5()
+{
+    let count = parseInt(document.querySelector(".value5").innerText);
+    count++;
+    document.querySelectorAll(".value5").forEach(element => element.innerText = count);
+    let numericPrice5 = price5.replace(/\D/g, "");
+    numericPrice5 = numericPrice5.substring(0, numericPrice5.length - 2);
+    total5.innerText = "Total: R" + (numericPrice5 * count) + ".00";
+    refreshModal();
+}
+
+function countMinus6()
+{
+    let count = parseInt(document.querySelector(".value6").innerText);
+    if(count > 0){count--;}
+    document.querySelectorAll(".value6").forEach(element => element.innerText = count);
+    let numericPrice6 = price6.replace(/\D/g, "");
+    numericPrice6 = numericPrice6.substring(0, numericPrice6.length - 2);
+    total6.innerText = "Total: R" + (numericPrice6 * count) + ".00";
+    refreshModal();
+}
+function countPlus6()
+{
+    let count = parseInt(document.querySelector(".value6").innerText);
+    count++;
+    document.querySelectorAll(".value6").forEach(element => element.innerText = count);
+    let numericPrice6 = price6.replace(/\D/g, "");
+    numericPrice6 = numericPrice6.substring(0, numericPrice6.length - 2);
+    total6.innerText = "Total: R" + (numericPrice6 * count) + ".00";
+    refreshModal();
+}
+
+function deleteItem1()
+{
+    qty1 = 0;
+    document.querySelectorAll(".value1").forEach(element => element.innerText = qty1);
+    total1.innerText = "Total: R0.00";
+    refreshModal();
+}
+function deleteItem2()
+{
+    qty2 = 0;
+    document.querySelectorAll(".value2").forEach(element => element.innerText = qty2);
+    total2.innerText = "Total: R0.00";
+    refreshModal();
+}
+function deleteItem3()
+{
+    qty3 = 0;   
+    document.querySelectorAll(".value3").forEach(element => element.innerText = qty3);
+    total3.innerText = "Total: R0.00";
+    refreshModal();
+}
+function deleteItem4()
+{
+    qty4 = 0;
+    document.querySelectorAll(".value4").forEach(element => element.innerText = qty4);
+    total4.innerText = "Total: R0.00";
+    refreshModal();
+}
+function deleteItem5()
+{
+    qty5 = 0;
+    document.querySelectorAll(".value5").forEach(element => element.innerText = qty5);
+    total5.innerText = "Total: R0.00";
+    refreshModal();
+}
+function deleteItem6()
+{
+    qty6 = 0;
+    document.querySelectorAll(".value6").forEach(element => element.innerText = qty6);
+    total6.innerText = "Total: R0.00";
+    refreshModal();
+}
+
+function refreshModal()
+{
+    //making a condition to check if the quantity of each item is greater than 0, and if it is, it will display the card for that item in the cart modal, and if it's not, it will hide the card for that item in the cart modal. This way, only the items that have a quantity greater than 0 will be displayed in the cart modal.
+    const qty1 = parseInt(document.querySelector(".value1").innerText) || 0; //using parseInt to convert the string value of the quantity to a number, and using || 0 to set it to 0 if it's not a number (e.g. if it's an empty string)
+    const qty2 = parseInt(document.querySelector(".value2").innerText) || 0; //making a constant for the quantity of each item to use in the conditions below to check if the quantity is greater than 0
+    const qty3 = parseInt(document.querySelector(".value3").innerText) || 0;
+    const qty4 = parseInt(document.querySelector(".value4").innerText) || 0;
+    const qty5 = parseInt(document.querySelector(".value5").innerText) || 0;
+    const qty6 = parseInt(document.querySelector(".value6").innerText) || 0;
+
+    if (qty1 > 0)
+    {
+        document.querySelector(".card1").style.display = "flex";
+    }
+    else{
+        document.querySelector(".card1").style.display = "none";
+    }
+
+
+
+    if  (qty2 > 0)
+    {
+        document.querySelector(".card2").style.display = "flex";
+    }                   
+    else{
+        document.querySelector(".card2").style.display = "none";
+    }
+
+
+
+    if  (qty3 > 0)
+    {
+        document.querySelector(".card3").style.display = "flex";
+    }
+    else{
+        document.querySelector(".card3").style.display = "none";
+    }
+
+
+
+    if  (qty4 > 0)
+    {
+        document.querySelector(".card4").style.display = "flex";
+    }
+    else{
+        document.querySelector(".card4").style.display = "none";
+    }
+
+
+
+    if  (qty5 > 0)
+    {
+        document.querySelector(".card5").style.display = "flex";
+    }
+    else{
+        document.querySelector(".card5").style.display = "none";
+    }
+
+
+
+    if  (qty6 > 0)
+    {
+        document.querySelector(".card6").style.display = "flex";
+    }
+    else{
+        document.querySelector(".card6").style.display = "none";
+    }
+}
+
+refreshModal();

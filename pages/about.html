@@ -112,11 +112,11 @@
             </div>
             <div class = "creatureButtons">
                 <div class = "spinner">
-                    <button class = "spinnerSection">
+                    <button class = "spinnerSection" onclick="countMinus1()">
                         <h7>-</h7>
                     </button>
-                    <h7 class = "spinnerSection">1</h7>
-                    <button class = "spinnerSection">
+                    <h7 class = "spinnerSection value1">0</h7>
+                    <button class = "spinnerSection" onclick="countPlus1()">
                         <h7>+</h7>
                     </button>
                 </div>
@@ -235,18 +235,16 @@
             </div>
             <div class = "creatureButtons">
                 <div class = "spinnerC">
-                    <button class = "spinnerSectionC">
+                    <button class = "spinnerSectionC" onclick="countMinus2()">
                         <h7>-</h7>
                     </button>
-                    <h7 class = "spinnerSectionC">1</h7>
-                    <button class = "spinnerSectionC">
+                    <h7 class = "spinnerSectionC value2">0</h7>
+                    <button class = "spinnerSectionC" onclick="countPlus2()">
                         <h7>+</h7>
                     </button>
                 </div>
                 <button class = "creatureCart">Add to Cart</button>
             </div>
-
-            <hr class = "creatureSeperationW">
 
             <div class = "creaturePreferences">
                 <div class = "preference">
@@ -357,11 +355,11 @@
             </div>
             <div class = "creatureButtons">
                 <div class = "spinner">
-                    <button class = "spinnerSection">
+                    <button class = "spinnerSection" onclick="countMinus3()">
                         <h7>-</h7>
                     </button>
-                    <h7 class = "spinnerSection">1</h7>
-                    <button class = "spinnerSection">
+                    <h7 class = "spinnerSection value3">0</h7>
+                    <button class = "spinnerSection" onclick="countPlus3()">
                         <h7>+</h7>
                     </button>
                 </div>
@@ -481,11 +479,11 @@
             </div>
             <div class = "creatureButtons">
                 <div class = "spinnerC">
-                    <button class = "spinnerSectionC">
+                    <button class = "spinnerSectionC" onclick="countMinus4()">
                         <h7>-</h7>
                     </button>
-                    <h7 class = "spinnerSectionC">1</h7>
-                    <button class = "spinnerSectionC">
+                    <h7 class = "spinnerSectionC value4">0</h7>
+                    <button class = "spinnerSectionC" onclick="countPlus4()">
                         <h7>+</h7>
                     </button>
                 </div>
@@ -605,11 +603,11 @@
             </div>
             <div class = "creatureButtons">
                 <div class = "spinner">
-                    <button class = "spinnerSection">
+                    <button class = "spinnerSection" onclick="countMinus5()">
                         <h7>-</h7>
                     </button>
-                    <h7 class = "spinnerSection">1</h7>
-                    <button class = "spinnerSection">
+                    <h7 class = "spinnerSection value5">0</h7>
+                    <button class = "spinnerSection" onclick="countPlus5()">
                         <h7>+</h7>
                     </button>
                 </div>
@@ -729,11 +727,11 @@
             </div>
             <div class = "creatureButtons">
                 <div class = "spinnerC">
-                    <button class = "spinnerSectionC">
+                    <button class = "spinnerSectionC" onclick="countMinus6()">
                         <h7>-</h7>
                     </button>
-                    <h7 class = "spinnerSectionC">1</h7>
-                    <button class = "spinnerSectionC">
+                    <h7 class = "spinnerSectionC value6">0</h7>
+                    <button class = "spinnerSectionC" onclick="countPlus6()">
                         <h7>+</h7>
                     </button>
                 </div>
@@ -807,7 +805,7 @@
 </div>
 <div class = "addToCart">
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"  data-bs-backdrop="false" >
-  Add to Cart
+  View Cart
 </button>
 
 <!-- Modal -->
@@ -830,27 +828,27 @@
                     <div class = "cart-creature-right-top">
                         
                     <div class = "cart-creature-name">
-                        <h1>Creature Name</h1>
+                        <h1>Azuron</h1>
                     </div>
-                    <div class = "cart-creature-price">
-                            <h1>Price: 0000000</h1>
+                    <div class = "cart-creature-price price1">
+                            <h1>Price: R2 500.00</h1>
                         </div>
                     </div>
                     <div class = "cart-creature-buttons">
-                        <div class = "spinnerC">
-                            <button class = "spinnerSectionC">
+                        <div class = "spinnerC qty1">
+                            <button class = "spinnerSectionC" onclick="countMinus1()">
                                 <h7>-</h7>
                             </button>
-                            <h7 class = "spinnerSectionC">1</h7>
-                            <button class = "spinnerSectionC">
+                            <h7 class = "spinnerSectionC value1">0</h7>
+                            <button class = "spinnerSectionC" onclick="countPlus1()">
                                 <h7>+</h7>
                             </button>
                         </div>
                         
-                        <div class = "cart-creature-total-price">
+                        <div class = "cart-creature-total-price total1">
                             <h1>Yo fam this the total</h1>
                         </div>
-                        <div class = "cart-creature-delete">
+                        <div class = "cart-creature-delete" onclick="deleteItem1()">
                             <button>Delete</button>
                         </div>
                     </div>
@@ -870,27 +868,27 @@
                     <div class = "cart-creature-right-top">
                         
                     <div class = "cart-creature-name">
-                        <h1>Creature Name</h1>
+                        <h1>Yuki</h1>
                     </div>
-                    <div class = "cart-creature-price">
-                            <h1>Price: 0000000</h1>
+                    <div class = "cart-creature-price price2">
+                            <h1>Price: R4 500.00</h1>
                         </div>
                     </div>
                     <div class = "cart-creature-buttons">
-                        <div class = "spinnerC">
-                            <button class = "spinnerSectionC">
+                        <div class = "spinnerC qty2">
+                            <button class = "spinnerSectionC" onclick="countMinus2()">
                                 <h7>-</h7>
                             </button>
-                            <h7 class = "spinnerSectionC">1</h7>
-                            <button class = "spinnerSectionC">
+                            <h7 class = "spinnerSectionC value2 cardQuantity">0</h7>
+                            <button class = "spinnerSectionC" onclick="countPlus2()">
                                 <h7>+</h7>
                             </button>
                         </div>
                         
-                        <div class = "cart-creature-total-price">
+                        <div class = "cart-creature-total-price total2">
                             <h1>Yo fam this the total</h1>
                         </div>
-                        <div class = "cart-creature-delete">
+                        <div class = "cart-creature-delete" onclick="deleteItem2()">
                             <button>Delete</button>
                         </div>
                     </div>
@@ -910,27 +908,27 @@
                     <div class = "cart-creature-right-top">
                         
                     <div class = "cart-creature-name">
-                        <h1>Creature Name</h1>
+                        <h1>Aurelia</h1>
                     </div>
-                    <div class = "cart-creature-price">
-                            <h1>Price: 0000000</h1>
+                    <div class = "cart-creature-price price3">
+                            <h1>Price: R6 500.00</h1>
                         </div>
                     </div>
                     <div class = "cart-creature-buttons">
-                        <div class = "spinnerC">
-                            <button class = "spinnerSectionC">
+                        <div class = "spinnerC qty3">
+                            <button class = "spinnerSectionC" onclick="countMinus3()">
                                 <h7>-</h7>
                             </button>
-                            <h7 class = "spinnerSectionC">1</h7>
-                            <button class = "spinnerSectionC">
+                            <h7 class = "spinnerSectionC value3">0</h7>
+                            <button class = "spinnerSectionC" onclick="countPlus3()">
                                 <h7>+</h7>
                             </button>
                         </div>
                         
-                        <div class = "cart-creature-total-price">
+                        <div class = "cart-creature-total-price total3">
                             <h1>Yo fam this the total</h1>
                         </div>
-                        <div class = "cart-creature-delete">
+                        <div class = "cart-creature-delete" onclick="deleteItem3()">
                             <button>Delete</button>
                         </div>
                     </div>
@@ -950,27 +948,27 @@
                     <div class = "cart-creature-right-top">
                         
                     <div class = "cart-creature-name">
-                        <h1>Creature Name</h1>
+                        <h1>Lumina</h1>
                     </div>
-                    <div class = "cart-creature-price">
-                            <h1>Price: 0000000</h1>
+                    <div class = "cart-creature-price price4">
+                            <h1>Price: R40,000.00</h1>
                         </div>
                     </div>
                     <div class = "cart-creature-buttons">
-                        <div class = "spinnerC">
-                            <button class = "spinnerSectionC">
+                        <div class = "spinnerC qty4">
+                            <button class = "spinnerSectionC" onclick="countMinus4()">
                                 <h7>-</h7>
                             </button>
-                            <h7 class = "spinnerSectionC">1</h7>
-                            <button class = "spinnerSectionC">
+                            <h7 class = "spinnerSectionC value4">0</h7>
+                            <button class = "spinnerSectionC" onclick="countPlus4()">
                                 <h7>+</h7>
                             </button>
                         </div>
                        
-                        <div class = "cart-creature-total-price">
+                        <div class = "cart-creature-total-price total4">
                             <h1>Yo fam this the total</h1>
                         </div>
-                        <div class = "cart-creature-delete">
+                        <div class = "cart-creature-delete" onclick="deleteItem4()">
                             <button>Delete</button>
                         </div>
                     </div>
@@ -990,27 +988,27 @@
                     <div class = "cart-creature-right-top">
                         
                     <div class = "cart-creature-name">
-                        <h1>Creature Name</h1>
+                        <h1>Starwind</h1>
                     </div>
-                    <div class = "cart-creature-price">
-                            <h1>Price: 0000000</h1>
+                    <div class = "cart-creature-price price5">
+                            <h1>Price: R5 000.00</h1>
                         </div>
                     </div>
                     <div class = "cart-creature-buttons">
-                        <div class = "spinnerC">
-                            <button class = "spinnerSectionC">
+                        <div class = "spinnerC qty5">
+                            <button class = "spinnerSectionC" onclick="countMinus5()">
                                 <h7>-</h7>
                             </button>
-                            <h7 class = "spinnerSectionC">1</h7>
-                            <button class = "spinnerSectionC">
+                            <h7 class = "spinnerSectionC value5">0</h7>
+                            <button class = "spinnerSectionC" onclick="countPlus5()">
                                 <h7>+</h7>
                             </button>
                         </div>
                         
-                        <div class = "cart-creature-total-price">
+                        <div class = "cart-creature-total-price total5">
                             <h1>Yo fam this the total</h1>
                         </div>
-                        <div class = "cart-creature-delete">
+                        <div class = "cart-creature-delete" onclick="deleteItem5()">
                             <button>Delete</button>
                         </div>
                     </div>
@@ -1030,27 +1028,27 @@
                     <div class = "cart-creature-right-top">
                         
                     <div class = "cart-creature-name">
-                        <h1>Creature Name</h1>
+                        <h1>Briar</h1>
                     </div>
-                    <div class = "cart-creature-price">
-                            <h1>Price: 0000000</h1>
+                    <div class = "cart-creature-price price6">
+                            <h1>Price: R3 500.00</h1>
                         </div>
                     </div>
                     <div class = "cart-creature-buttons">
-                        <div class = "spinnerC">
-                            <button class = "spinnerSectionC">
+                        <div class = "spinnerC qty6">
+                            <button class = "spinnerSectionC" onclick="countMinus6()">
                                 <h7>-</h7>
                             </button>
-                            <h7 class = "spinnerSectionC">1</h7>
-                            <button class = "spinnerSectionC">
+                            <h7 class = "spinnerSectionC value6">0</h7>
+                            <button class = "spinnerSectionC" onclick="countPlus6()">
                                 <h7>+</h7>
                             </button>
                         </div>
                         
-                        <div class = "cart-creature-total-price">
+                        <div class = "cart-creature-total-price total6">
                             <h1>Yo fam this the total</h1>
                         </div>
-                        <div class = "cart-creature-delete">
+                        <div class = "cart-creature-delete" onclick="deleteItem6()">
                             <button>Delete</button>
                         </div>
                     </div>
