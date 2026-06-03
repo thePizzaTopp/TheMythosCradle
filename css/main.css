@@ -820,6 +820,10 @@ height: 60px;
 .cart-card {
     display: flex;
     flex-direction: row;
+    border: solid 2px #e9ad1c;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #002d68;
 }
 .cart-card-left{
     display: flex;
@@ -828,7 +832,10 @@ height: 60px;
 .cart-image-container img{
     width: 150px;
     height: auto;
-    /* do some more things for the image here later */
+    
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+   
 }
 .cart-card-right{
     display: flex;
@@ -838,16 +845,30 @@ height: 60px;
 }
 .cart-card-right h1{
     font-size: 16pt;
-    color: #002d68;
+    color: #ffffff;
     border-radius: 30px;
 }
 .cart-creature-buttons{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 20px;
 }
 .spinnerC{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.cart-creature-right-top{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
