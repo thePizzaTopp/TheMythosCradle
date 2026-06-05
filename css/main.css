@@ -878,3 +878,24 @@ height: 60px;
     font-size: 18pt;
     font-weight: bold;
 }
+
+.resultContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #e9ad1c;
+    color: white;
+}
+.resultArea{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+
+.symbol{
+    color: #ffffff;
+}
