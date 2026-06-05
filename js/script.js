@@ -1,3 +1,127 @@
+//search startttttttt
+let availableKeywords = [
+    'Percy',
+    'Ripple',
+    'Atlas',
+    'Skye',
+    'Azuron',
+    'Yuki',
+    'Aurelia',
+    'Starwind',
+    'Briar',
+    
+];
+
+const resultsBox = document.querySelector(".result-box");
+const inputBox = document.getElementById("input-box");
+
+inputBox.onkeyup = function(){
+    let result = [];
+    let input = inputBox.value;
+    if(input.length){
+        result = availableKeywords.filter((keyword)=>{
+           return keyword.toLowerCase().includes(input.toLowerCase());
+        });
+        console.group(result);
+    }
+    display(result);
+
+    if(!result.length){
+        resultsBox.innerHTML ='';
+    }
+}
+
+function display(result) {
+    if (result.length === 0) {
+        resultsBox.innerHTML = '';
+        return;
+    }
+      
+    if(!result.length){
+        resultsBox.innerHTML = '';
+        resultsBox.style.border = 'none'; 
+    } else {
+        resultsBox.style.border = '1px solid #ddd'; 
+    }
+
+    const content = result.map((list) => {
+        return `<li onclick="selectInput(this)">${list}</li>`;
+    });
+
+    resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
+}
+
+function selectInput(listItem) {
+  inputBox.value = listItem.innerHTML;
+
+  if (listItem.innerHTML.toLowerCase() === "percy") {
+    window.location.href = "../index.html#anchor-percy";
+  }
+
+  if (listItem.innerHTML.toLowerCase() === "ripple") {
+    window.location.href = "../index.html#anchor-ripple";
+  }
+
+  if (listItem.innerHTML.toLowerCase() === "atlas") {
+    window.location.href = "../index.html#anchor-atlas";
+  }
+
+  if (listItem.innerHTML.toLowerCase() === "skye") {
+    window.location.href = "../index.html#anchor-skye";
+  }
+
+  if (listItem.innerHTML.toLowerCase() === "azuron") {
+  window.location.href = "../pages/about.html#anchor-azuron";
+}
+
+  if (listItem.innerHTML.toLowerCase() === "yuki") {
+    window.location.href = "../pages/about.html#anchor-yuki";   
+  }
+
+  if (listItem.innerHTML.toLowerCase() === "aurelia") {
+    window.location.href = "../pages/about.html#anchor-aurelia";
+  }
+
+  if (listItem.innerHTML.toLowerCase() === "starwind") {
+    window.location.href = "../pages/about.html#anchor-starwind";
+  }
+
+  if (listItem.innerHTML.toLowerCase() === "briar") {
+    window.location.href = "../pages/about.html#anchor-briar";
+  }
+
+
+
+  resultsBox.innerHTML = "";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //creating a very simple shopping cart system using javascript. The code is a bit repetitive but it works and is easy to understand. :D
 
 let price1 = document.querySelector(".price1").innerText;
@@ -28,6 +152,10 @@ let sumPrice3 = 0;
 let sumPrice4 = 0;
 let sumPrice5 = 0;
 let sumPrice6 = 0;
+
+
+
+
 
 
 
@@ -312,4 +440,28 @@ refreshModal();
 
 const newImg = document.createElement("img");
 newImg.src = products[0].image;
+
+
+
+//formmmmmmmm
+
+
+
+function getFormInfo() {
+
+
+  const userData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("topic").value,
+    message: document.getElementById("message").value
+  };
+
+  //Alert (Thank you message here)
+  alert(`Thank you, ${userData.name}! Your message has been sent.`);
+
+  
+}
+
+
 
