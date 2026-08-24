@@ -457,7 +457,7 @@ function getFormInfo() {
     message: document.getElementById("message").value
   };
 
-  //Alert (Thank you message here)
+  
   alert(`Thank you, ${userData.name}! Your message has been sent.`);
 
   
